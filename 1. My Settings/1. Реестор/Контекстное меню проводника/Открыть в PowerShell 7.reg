@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\07PowerShell7Profile]
+"MUIVerb"="PowerShell 7"
+"Icon"="pwsh.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\07PowerShell7Profile\command]
+@="cmd.exe /c start wt.exe -p \"PowerShell\" -d \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\07PowerShell7Profile]
+"MUIVerb"="PowerShell 7"
+"Icon"="pwsh.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\07PowerShell7Profile\command]
+@="cmd.exe /c start wt.exe -p \"PowerShell\" -d \"%V\""

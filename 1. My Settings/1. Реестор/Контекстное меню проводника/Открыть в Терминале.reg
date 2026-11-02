@@ -1,0 +1,53 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWindowsTerminalProfiles]
+"MUIVerb"="Открыть в Терминале Windows"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile]
+"MUIVerb"="Профиль по умолчанию"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile\command]
+@="cmd.exe /c start wt.exe -d \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile]
+"MUIVerb"="Командная строка"
+"Icon"="imageres.dll,-5323"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile\command]
+@="cmd.exe /c start wt.exe -p \"Командная строка\" -d \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile]
+"MUIVerb"="PowerShell"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile\command]
+@="cmd.exe /c start wt.exe -p \"Windows PowerShell\" -d \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWindowsTerminalProfiles]
+"MUIVerb"="Открыть в Терминале Windows"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile]
+"MUIVerb"="Профиль по умолчанию"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile\command]
+@="cmd.exe /c start wt.exe -d \"%V\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile]
+"MUIVerb"="Командная строка"
+"Icon"="imageres.dll,-5323"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile\command]
+@="cmd.exe /c start wt.exe -p \"Командная строка\" -d \"%V\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile]
+"MUIVerb"="PowerShell"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile\command]
+@="cmd.exe /c start wt.exe -p \"Windows PowerShell\" -d \"%V\""

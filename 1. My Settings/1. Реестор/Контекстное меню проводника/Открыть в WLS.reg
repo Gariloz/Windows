@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\05WSLProfile]
+"MUIVerb"="Ubuntu"
+"Icon"="wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\05WSLProfile\command]
+@="cmd.exe /c start wt.exe -p \"Ubuntu\" -d \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\05WSLProfile]
+"MUIVerb"="Ubuntu"
+"Icon"="wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\05WSLProfile\command]
+@="cmd.exe /c start wt.exe -p \"Ubuntu\" -d \"%V\""
