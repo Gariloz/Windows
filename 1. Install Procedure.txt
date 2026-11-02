@@ -1,0 +1,93 @@
+_____________________________________________________________________________________________________________________________
+
+|---------------|
+| Без интернета |                                                                                        
+|---------------|
+
+При первой загрузке!
+
+[0] Автоматизация (0. Build\0. Automation)
+
+[1] Отключить ненужные компоненты Windows через панель управления
+
+1) .NET Framework 4.8 Advanced Services (.NET Framework 4.8 Advanced Services)
+2) Internet Explorer 11 (Internet Explorer 11)
+3) Microsoft Print to PDF (Печать в PDF)
+4) Microsoft XPS Document Writer (Средство записи XPS-документов)
+5) Print and Document Services (Служба печати и документов)
+6) Remote Differential Compression API Support (Поддержка API удаленного разностного сжатия)
+7) SMB Direct (Служба SMB Direct)
+8) Work Folders Client (Клиент рабочих папок)
+
+[2] Удалить приложения(Apps) в параметрах Windows
+
+1) AV1 Video Extension
+2) HEVC Video Extension
+3) Ножницы (Snipping Toll)
+4) Paint (Paint)
+5) CPU-Z
+
+[3] Первоначальная настройки Windows
+
+1) 1. Temp.cmd (Установка папки Temp в корень диска С:\)
+2) 2. Keyboard.cmd (Смена переключения клавиатуры Shift+Ctrl)
+3) 3. Rebind Key.cmd (Переназначение клавиш местами CTR, ALT)
+4) 4. Swap File And Window Animation.cmd (Установка файла подкачки 10240, анимации окон)
+5) 5. Power CFG.cmd (Установка схемы электропитания Game Turbo)
+6) 6. Services.cmd (Отключение служб)
+7) 7. Change Administrator Path (Смена пути администратора в реестре для пользователя Amnesia)
+8) 8. Rename Administrator Default Name.cmd (Смена имени встроенной учетной записи Administrator)
+9) 9. Rename PC.cmd (Смена имени компьютера)
+10) 10. Restart Safe Boot.cmd (Перезагрузка в безопасном режиме)
+11) 11. Rename Administrator Folder.cmd (Перемеинование папки пользователя Administrator, перезагрузка)
+12) 12. Del Updates.cmd (Удаление встроенных обновлений Windows)
+Пока что не надо наверно
+13) 13. Del SystemApps EXPERIMENTAL.cmd (Удаление встроенных системных приложений EXPERIMENTAL FUNCTION)
+14) 14. Del Services EXPERIMENTAL.cmd (Удаление служб EXPERIMENTAL FUNCTION)
+
+[4] Отключить службы (services.msc) HKLM\SYSTEM\CurrentControlSet\Services
+
+[cmd]
+1) My Settings v2\5. Windows Update\off\off.cmd
+2) My Settings v2\6. Services.cmd
+
+[Вручную]
+1) Windows Update (Центр обновления Windows) {wuauserv} Удалить все разрешения кроме user admin system
+2) Windows Update Medic Service (Служба Medic центра обновления Windows) {WaaSMedicSvc}
+3) Delivery Optimization (Оптимизация доставки) {DoSvc}
+4) Windows Search (Windows Search) {WSearch}
+5) Touch Keyboard and Handwriting Panel Service (Служба сенсорной клавиатуры и панели рукописного ввода) {TabletInputService}
+6) Volume Shadow Copy (Теневое копирование тома) {VSS}
+7) Windows Installer (Установщик Windows) {msiserver}
+_____________________________________________________________________________________________________________________________
+
+-----------------------------------------------------------------------------------------------------------------------------
+|--------------|
+| С интернетом |
+|--------------|
+
+[0] Включить службу обновления Windows (0. Build\0. Automation\5. On Update.cmd)
+
+[1] Установить русский язык
+
+[2] Установить Windows Termenal (winget install -e --id Microsoft.WindowsTerminal)
+
+[3] Активировать Windows через Microsoft Activation Scripts (MAS)
+
+[4] Реестр, драйвера.
+
+1) Реестор (0. Build\1. My Settings\1. Реестор)
+2) Драйвера (0. Build\1. My Settings\2. Драйвера)
+3) VCRHyb64 (0. Build\1. My Settings\2. Драйвера)
+
+[5] Установка через Ghost Toolbox 
+
+1)DirectX (system)
+2)Visual C++ Redistributables AIO (system)
+
+[6] Driver Booster
+
+[7] Настроить панель управления NVIDIA
+
+[8] Отключить службу обновления Windows (0. Build\0. Automation\6. Off Update.cmd)
+-----------------------------------------------------------------------------------------------------------------------------
