@@ -1,0 +1,34 @@
+dism /online /remove-package /packagename:Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package~31bf3856ad364e35~amd64~~10.0.19041.4355 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-FodMetadata-Package~31bf3856ad364e35~amd64~~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-Foundation-Package~31bf3856ad364e35~amd64~~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-Hello-Face-Package~31bf3856ad364e35~amd64~~10.0.19041.3636 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~~11.0.19041.4355 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-MSPaint-FoD-Package~31bf3856ad364e35~amd64~en-US~10.0.19041.3758 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-MSPaint-FoD-Package~31bf3856ad364e35~amd64~~10.0.19041.4355 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-MSPaint-FoD-Package~31bf3856ad364e35~wow64~en-US~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-MSPaint-FoD-Package~31bf3856ad364e35~wow64~~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~en-US~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~~10.0.19041.3636 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~en-US~10.0.19041.3636 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~~10.0.19041.4355 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-QuickAssist-Package~31bf3856ad364e35~amd64~~10.0.19041.4355 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~en-US~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~~10.0.19041.3636 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~en-US~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-TabletPCMath-Package~31bf3856ad364e35~amd64~~10.0.19041.4355 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-UserExperience-Desktop-Package~31bf3856ad364e35~amd64~~10.0.19041.4355 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~en-US~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~~10.0.19041.4412 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~en-US~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~~10.0.19041.1 /NoRestart
+dism /online /remove-package /packagename:OpenSSH-Client-Package~31bf3856ad364e35~amd64~~10.0.19041.3636 /NoRestart
+dism /online /remove-package /packagename:Package_for_DotNetRollup~31bf3856ad364e35~amd64~~10.0.4724.1 /NoRestart
+dism /online /remove-package /packagename:Package_for_KB5003791~31bf3856ad364e35~amd64~~19041.1237.1.3 /NoRestart
+dism /online /remove-package /packagename:Package_for_KB5011048~31bf3856ad364e35~amd64~~10.0.9195.7 /NoRestart
+dism /online /remove-package /packagename:Package_for_KB5012170~31bf3856ad364e35~amd64~~19041.1880.1.1 /NoRestart
+dism /online /remove-package /packagename:Package_for_RollupFix~31bf3856ad364e35~amd64~~19041.4412.1.15 /NoRestart
+dism /online /remove-package /packagename:Package_for_ServicingStack_1704~31bf3856ad364e35~amd64~~19041.1704.1.4 /NoRestart
+dism /online /remove-package /packagename:Package_for_ServicingStack_4351~31bf3856ad364e35~amd64~~19041.4351.1.5 /NoRestart
+dism /online /remove-package /packagename:Package_for_ServicingStack~31bf3856ad364e35~amd64~~19041.1220.1.0 /NoRestart >nul
+exit /b
