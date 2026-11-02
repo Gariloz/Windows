@@ -1,0 +1,111 @@
+;================================ 
+;MAG251RX.INF 04/08/2022 Ver. 2.0
+;Copyright 2017-2022 MSI Inc.
+;This is a Microsoft Windows setup information file for the MSI Color Monitor.
+;================================
+ 
+[version]
+signature="$CHICAGO$"
+Class=Monitor
+ClassGuid={4D36E96E-E325-11CE-BFC1-08002BE10318}
+Provider=%MSI%
+CatalogFile=MAG251RX.cat
+DriverVer=04/08/2022,2.0.0.0
+
+[ControlFlags]
+ExcludeFromSelect.nt=Monitor\MSI3BA3
+
+[DestinationDirs]
+DefaultDestDir=11
+3BA3_DP.CopyFiles=23
+3BA3_HDMI.CopyFiles=23
+
+[SourceDisksNames]
+1=%DiskName%,,,
+
+[SourceDisksFiles]
+MAG251RX.icm=1
+
+[Monitor_Service.Install]
+DisplayName    = %Monitor.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\monitor.sys
+
+
+[Manufacturer]
+%MSI%=MSI, NTx86, NTia64, NTamd64
+
+[MSI]
+%3BA3_DP%=3BA3_DP.Install, Monitor\MSI3BA3
+%3BA3_HDMI%=3BA3_HDMI.Install, Monitor\MSI3BA3
+
+[MSI.NTx86]
+%3BA3_DP%=3BA3_DP.Install, Monitor\MSI3BA3
+%3BA3_HDMI%=3BA3_HDMI.Install, Monitor\MSI3BA3
+
+[MSI.NTia64]
+%3BA3_DP%=3BA3_DP.Install, Monitor\MSI3BA3
+%3BA3_HDMI%=3BA3_HDMI.Install, Monitor\MSI3BA3
+
+[MSI.NTamd64]
+%3BA3_DP%=3BA3_DP.Install, Monitor\MSI3BA3
+%3BA3_HDMI%=3BA3_HDMI.Install, Monitor\MSI3BA3
+
+[3BA3_DP.Install]
+DelReg=DEL_CURRENT_REG
+AddReg=3BA3_DP.AddReg
+Copyfiles=3BA3_DP.CopyFiles
+
+[3BA3_HDMI.Install]
+DelReg=DEL_CURRENT_REG
+AddReg=3BA3_HDMI.AddReg
+Copyfiles=3BA3_HDMI.CopyFiles
+
+
+[3BA3_DP.Install.Services]
+AddService = monitor, %SPSVCINST_ASSOCSERVICE%,Monitor_Service.Install
+
+[3BA3_HDMI.Install.Services]
+AddService = monitor, %SPSVCINST_ASSOCSERVICE%,Monitor_Service.Install
+
+
+[DEL_CURRENT_REG]
+HKR,MODES
+HKR,,MaxResolution
+HKR,,DPMS
+HKR,,ICMProfile
+
+[3BA3_DP.AddReg]
+HKR,"MODES\1920,1080",Mode1,,"255.0-255.0,48.0-240.0,+,+"
+HKR,,MaxResolution,,"1920,1080"
+HKR,,DPMS,,1
+HKR,,ICMProfile,0,"MAG251RX.icm"
+HKR,,DisplayHdrLevel, %REG_MULTI_SZ_APPEND%, 20C5A9AF-CD1A-42B1-AA71-4C96A273DEF1
+
+[3BA3_HDMI.AddReg]
+HKR,"MODES\1920,1080",Mode1,,"30.0-255.0,48.0-240.0,+,+"
+HKR,,MaxResolution,,"1920,1080"
+HKR,,DPMS,,1
+HKR,,ICMProfile,0,"MAG251RX.icm"
+HKR,,DisplayHdrLevel, %REG_MULTI_SZ_APPEND%, 20C5A9AF-CD1A-42B1-AA71-4C96A273DEF1
+
+
+[3BA3_DP.CopyFiles]
+MAG251RX.icm
+
+[3BA3_HDMI.CopyFiles]
+MAG251RX.icm
+
+[Strings]
+
+SPSVCINST_ASSOCSERVICE = 0x00000002
+Monitor.SVCDESC = "Microsoft Monitor Class Function Driver Service"
+
+DiskName="MSI Monitor Installation Disk"
+MSI="MSI Computer Inc."
+REG_MULTI_SZ_APPEND=0x00010008
+
+3BA3_DP="MSI Optix MAG251RX"
+3BA3_HDMI="MSI Optix MAG251RX"
